@@ -1,3 +1,3 @@
 variable "ansible_bucket"{
-    default="<maramusaev-ansible-b>"
+    default="maramusaev-ansible-b"
 }
