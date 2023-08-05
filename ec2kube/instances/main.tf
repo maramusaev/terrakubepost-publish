@@ -6,8 +6,8 @@ terraform {
   }
 
   backend "s3" {
-    bucket = "<bucket_name>"
-    key    = "<state_name>"
+    bucket = "maramusaev-state-b"
+    key    = "state_name"
     region = "us-east-1"
   }
 }
