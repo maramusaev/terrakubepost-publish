@@ -8,8 +8,8 @@ pipeline{
         SKIP="N"
         TERRADESTROY="N"
         FIRST_DEPLOY="Y"
-        STATE_BUCKET="<maramusaev-state-b>"
-        ANSIBLE_BUCKET_NAME="<maramusaev-ansible-b>"
+        STATE_BUCKET="maramusaev-state-b"
+        ANSIBLE_BUCKET_NAME="maramusaev-ansible-b"
     }
 
 
@@ -330,7 +330,7 @@ pipeline{
                 stage("Destroy state bucket"){
                     steps{
                         sh '''
-                            aws s3 rb s3://<maramusaev-state-b> --force
+                            aws s3 rb s3://maramusaev-state-b --force
                             '''
                     }
                 }
